@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato Gama Academy</title>
+</head>
+
+<body>
+    <!--criando um menu com tabelas-->
+    <table border="0" width="100%">
+        <tr>
+            <td align="center"><a href="../html/index.html"><img src="../imagens/LOGO.png" width="200" height="40"></a>
+            </td>
+            <td align="right">QUEM SOMOS</td>
+            <td align="right">PARA PESSOAS</td>
+            <td align="right">PARA EMPRESAS</td>
+            <td align="right">CONTATO</td>
+            <td align="right">CONTEUDO</td>
+        </tr>
+    </table>
+    <br>
+    <!--criando um formulario-->
+    <form id="contatos" method="POST">
+        <!--criando uma caixa-->
+        <fieldset>
+            <!--insere legenda dentro da caixa do formulario-->
+            <legend>Preencha as informações abaixo para realizar o nosso curso</legend>
+            <br>
+            <!--criando os campos para o formulario-->
+            <label>Nome: </label><input type="text" name="nome" required><br><br>
+            <label>Email: </label><input type="email" name="email" required><br><br>
+            <label>Senha: </label><input type="password" name="senha" required><br><br>
+            <!--Criando escolha de opcoes com radio button-->
+            <label>Genero: </label><input type="radio" name="opcao" value="Feminino" /> Feminino <input type="radio"
+                name="opcao" value="Masculino" />Masculino <input type="radio" name="opcao"
+                value="Outros" />Outros<br><br>
+            <label>Escolha o Curso Desejado: </label>
+            <!--Criando um menu com dropdown-->
+            <select>
+                <option value=""></option>
+                <option value="HTML">HTML</option>
+                <option value="XML">XML</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JavaScript</option>
+            </select><br><br>
+            <!--criando um menu com check box-->
+            <label>Escolha o Periodo Desejado: </label>
+            <input type="checkbox" name="OPCAO" value="Manhã">Manhã
+            <input type="checkbox" name="OPCAO" value="Tarde">Tarde
+            <input type="checkbox" name="OPCAO" value="Noite">Noite<br><br>
+            <!--Criando um componente de data-->
+            <label>Escolha a data que deseja iniciar</label>
+            <input type="date" name="data" required><br><br>
+            <!--Criando uma caixa de observação-->
+            <label>Mensagem</label><br>
+            <textarea cols="35" rows="3">Digite seu texto</textarea><br><br>
+            <!--anexando um documento-->
+            <label>Insira um comprovante de residencia</label>
+            <input type="submit" value="Send">
+
+            <!--criando um botão de envio de dados-->
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+
+</html>
