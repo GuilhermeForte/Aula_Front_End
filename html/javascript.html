@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <!--criando uma biblioteca em JavaScript-->
     <script>
-       // alert("sejam todos bem vindos");
+        // alert("sejam todos bem vindos");
 
-       //var empresa="Gama Academy";
-       //var msm="sejam todos bem vindos a ";
-       //alert(msm+empresa);
+        //var empresa="Gama Academy";
+        //var msm="sejam todos bem vindos a ";
+        //alert(msm+empresa);
 
-      var nome=prompt("Sejam bem vindos, por favor informe o seu nome");
-      alert("Ola "+nome+" estamos felizes em ter-lo aqui conosco");
+        var nome = prompt("Sejam bem vindos, por favor informe o seu nome");
+        alert("Ola " + nome + " estamos felizes em ter-lo aqui conosco");
 
-      function funcao_ms(){
-          alert("venha participar do nosso curso de JavaScript")
-      }
+        function funcao_ms() {
+            alert("venha participar do nosso curso de JavaScript")
+        }
 
-      function validar(){
-          var nome=contato.nome.value;
-          var email=contato.email.value;
-          //alert(nome+""+email);
-          if(nome==""){
-              alert("o preenchimeto do campo nome é obrigatorio");
-              contato.nome.focus();
-              return false;
-          }if(nome.length<=3){
-              alert("digite seu nome completo")
-              contato.nome.focus();
-              return false;
-          }if(email==""|| email.indexOf('@')){
-              alert("O preechimento do campo é obrigatorio com um email valido");
-              contato.email.focus();
-              return false;
-          }
-      }
+        function validar() {
+            var nome = contato.nome.value;
+            var email = contato.email.value;
+            //alert(nome+""+email);
+            if (nome == "") {
+                alert("o preenchimeto do campo nome é obrigatorio");
+                contato.nome.focus();
+                return false;
+            } if (nome.length <= 3) {
+                alert("digite seu nome completo")
+                contato.nome.focus();
+                return false;
+            } if (email == "" || email.indexOf('@')) {
+                alert("O preechimento do campo é obrigatorio com um email valido");
+                contato.email.focus();
+                return false;
+            }
+            alert("seja bem vindo " + nome + " iremos enviar mais informações para " + email);
+        }
     </script>
 </head>
+
 <body>
-     <!--
+    <!--
     <h3>Clique no botão para ver a mensagem de saudação</h3>
     <input type="button" onclick="funcao_ms()" value="Mensagem">-->
     <form id="contato" method="POST">
@@ -51,4 +54,5 @@
     </form>
 
 </body>
+
 </html>
