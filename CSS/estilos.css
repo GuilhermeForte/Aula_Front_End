@@ -1,0 +1,72 @@
+/*criando tipos de estilos para comandos nativos do HTML5*/
+        body{
+            background-color: rgb(202, 221, 132);
+            /*background-image: url("../imagens/pessoas.png");*/
+        }
+        p{
+            font-size: 12px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:rgb(7, 6, 105);
+        }
+        h1{
+            font-size: 26px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            color:black;
+        }
+        legend{
+            font-size: 12px;
+            font-weight: bolder;
+            color: black;
+            text-align: center;
+        }
+        /*criando estios de classes*/
+        .menu{
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(6, 6, 61);
+            font-weight: bold;
+        }
+        .frase{
+            font-size: 12px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:rgb(164, 164, 173);
+        }
+        /* Criando estilos para componentes com nomes*/
+        #contatos{
+            background-color: coral;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        /*classes destinadas aos campos do formulario*/
+        .campo_nome{
+            position: relative;
+            left: 10px;
+            width: 220px;
+            background-color: cyan;
+            color: darkblue;
+        }
+        .campo_email{
+            position: relative;
+            left: 10px;
+            width: 226px;
+            background-color: rgb(15, 160, 22);
+            color: darkblue;
+        }
+        /*Criando classes para o Bootstrap*/
+        .container{
+            border: 3px solid red;
+        }
+        .div1{
+            background-color: yellow;
+        }
+        .div2{
+            background-color: tomato;
+        }
+        .div3{
+            background-color: slateblue;
+        }
+        .div4{
+            background-color: springgreen;
+        }
